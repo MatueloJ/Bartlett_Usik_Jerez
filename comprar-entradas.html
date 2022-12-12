@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julieta Bartlett, Britney Usik, Jerez Matias - DGM4A 2022</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet" />
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/eoc5pwg.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid my-1">
+                <a class="navbar-brand" href="index.html">
+                    <img class="m-1 museum-logo" src="icons/logo_museo_white.svg" alt="logo_museo">
+                </a>
+                <div>
+                    <!-- TICKETS NAVBAR HAMBURGER-->
+                    <a href="#" class="btn btn-red me-2 d-inline d-lg-none">ENTRADAS</a>
+                    <!-- HAMBUERGUER MENU NAVBAR -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mt-3 mt-lg-1">
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link nav-link-3 dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">inicio</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-dark" href="index.html#events">eventos</a></li>
+                                <li><a class="dropdown-item text-dark" href="index.html#artwork">obras</a></li>
+                                <li><a class="dropdown-item text-dark" href="index.html#testimonial">opiniones</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link-2" href="index.html">museo</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link-4" href="colecciones.html">colecciones</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link-4" href="merchandising.html">tienda</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link-5" href="contacto.html">contacto</a>
+                        </li>
+                    </ul>
+                    <!-- TICKETS NAVBAR-->
+                    <div class="d-lg-block text-end m-1">
+                        <input class="form-control mt-1 rounded-0" type="search" placeholder="Buscar"
+                            aria-label="Search" />
+                        <a href="#" class="d-none d-lg-inline-block btn btn-red mt-2">ENTRADAS</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- CAROUSEL -->
+        <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- CAROUSEL ITEM #1 -->
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/carouselTickets3.jpg" class="d-block" alt="carousel_image1">
+                    </div>
+                    <div class="carousel-caption text-start">
+                        <h1 class="display-5">"Domingo en el museo", jornadas de entrada gratuita.</h1>
+                        <p class="lead">El primer domingo de cada mes.
+                        </p>
+                    </div>
+                </div>
+                <!-- CAROUSEL ITEM #2 -->
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/carouselTickets2.jpg" class="d-block" alt="carousel_image2">
+                    </div>
+                    <div class="carousel-caption text-start">
+                        <h1 class="display-5">¡Nuevo pasaporte 5 dias!</h1>
+                        <p class="lead">Tómese su tiempo para visitar el museo.</p>
+                    </div>
+                </div>
+                <!-- CAROUSEL ITEM #3 -->
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/carouselTickets1.jpg" class="d-block" alt="carousel_image3">
+                    </div>
+                    <div class="carousel-caption text-start">
+                        <h1 class="display-5">¡Oferta única!, Palacio Pitti</h1>
+                        <p class="lead">50% de descuento en la entrada si entras en el Palacio Pitti antes de las 9:00
+                            h.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="tickets_intro">
+            <div class="container-fluid pb-1 text-center">
+                <div class="row division-section py-3">
+                    <div class="col-11 mx-auto text-white">
+                        <i class="bi bi-question-square fs-4"></i>
+                        <h2 class="d-inline ms-2 fs-2">¿Como compro mis entradas?</h2>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-11 mx-auto">
+                        <div class="accordion" id="accordionExample">
+                            <!-- item 1 -->
+                            <div class="accordion-item border border-dark">
+                                <h3 class="accordion-header h5 py-3 border-bottom border-dark" id="headingOne">
+                                    <div type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        <strong>Método online</strong>
+                                    </div>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse show border-top"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="row text-start mx-auto pt-3 pb-1">
+                                        <div class="col-12 col-lg-4 d-flex justify-content-center px-0">
+                                            <div class="col-2 text-center">
+                                                <p class="fs-2">
+                                                    <strong>1</strong>
+                                                </p>
+                                            </div>
+                                            <div class="col-10">
+                                                <p class="fs-6 mb-2"><strong>Compra el boleto en línea</strong></p>
+                                                <p class="pe-3">Elegí la entrada que se adecue a tus necesidades. En la
+                                                    web de
+                                                    B-ticket
+                                                    puedes reservar la hora y la fecha de tu visita. Recibirás un email
+                                                    de
+                                                    confirmación, no lo tires.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 d-flex justify-content-center px-0">
+                                            <div class="col-2 text-center">
+                                                <p class="fs-2">
+                                                    <strong>2</strong>
+                                                </p>
+                                            </div>
+                                            <div class="col-10">
+                                                <p class="fs-6 mb-2"><strong>Llevar el recibo a la taquilla</strong></p>
+                                                <p class="pe-3">Imprime el correo electrónico de confirmación y llévalo
+                                                    a la
+                                                    taquilla, donde se canjeará por una entrada.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 d-flex justify-content-center px-0">
+                                            <div class="col-2 text-center">
+                                                <p class="fs-2">
+                                                    <strong>3</strong>
+                                                </p>
+                                            </div>
+                                            <div class="col-10">
+                                                <p class="fs-6 mb-2"><strong>Sáltate la cola para entrar al
+                                                        museo.</strong></p>
+                                                <p class="pe-3">Con tu entrada ya puedes entrar al museo saltándote las
+                                                    colas
+                                                    por el carril de vía rápida. Consulta el mapa de cada museo para
+                                                    saber
+                                                    dónde está.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item 2 -->
+                            <div class="accordion-item border-bottom border-dark">
+                                <h3 class="accordion-header h5 py-3 border-bottom border-dark" id="headingTwo">
+                                    <div type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseTwo">
+                                        <strong>Método presencial</strong>
+                                    </div>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse show border-top"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="row text-start mx-auto pt-3 pb-1 text-center">
+                                        <div class="col-11 col-lg-9 mx-auto">
+                                            <p>Podes acercarte de lunes a viernes de 8:30 a 18:30 / sábados de 8:30 a
+                                                12:30
+                                                a las taquillas del museo, o llamar al +39 055 294883 dentro del mismo
+                                                horario para la reserva de tus entradas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-4 mx-lg-4 pb-3">
+                    <div class="col-10 col-lg-9 mx-auto text-center mt-5 mb-2">
+                        <p><strong><em>* Precios válidos del 1 de noviembre de 2022 al 28 de febrero de
+                                    2023.</em></strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PRICING -->
+        <section id="pricing">
+            <div class="container-fluid pb-1 text-center">
+                <div class="row division-section py-3 text-center mb-3">
+                    <div class="col-11 mx-auto text-white">
+                        <i class="bi bi-ticket-detailed fs-4"></i>
+                        <h2 class="d-inline ms-2 fs-2">Tipos de entradas</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row mx-lg-4 mt-5">
+                    <!-- PRICE #1 -->
+                    <div class="col-11 col-lg-3 mb-4 mx-auto">
+                        <div class="card h-100 text-center shadow-lg">
+                            <h3 class="card-header py-3 card-title border-0 shadow-sm">Gratuita</h3>
+                            <div class="card-body">
+                                <p class="display-6">$0</p>
+                                <p class="card-text">Entrada libre y gratuita. <br>
+                                    Acceso limitado a ciertos sectores. <br>
+                                    No incluye la fila rapida.</p>
+                                <a href="#pricing" class="btn btn-blue d-grid">Comprar en línea</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PRICE #2 -->
+                    <div class="col-11 col-lg-3 mb-4 mx-auto">
+                        <div class="card h-100 text-center shadow-lg">
+                            <h3 class="card-header py-3 card-title border-0 shadow-sm">Reducido</h3>
+                            <div class="card-body">
+                                <p class="display-6">$2</p>
+                                <p class="card-text">Entrada básica. <br>
+                                    Acceso a sectores reducidos. <br>
+                                    No incluye la fila rapida.</p>
+                                <a href="#pricing" class="btn btn-red d-grid">Comprar en línea</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PRICE #3 -->
+                    <div class="col-11 col-lg-3 mb-4 mx-auto">
+                        <div class="card h-100 text-center shadow-lg">
+                            <h3 class="card-header py-3 card-title border-0 shadow-sm">Regular</h3>
+                            <div class="card-body">
+                                <p class="display-6">$4</p>
+                                <p class="card-text">Entrada de costo normal. <br>
+                                    Acceso a sectores regulares. <br>
+                                    Incluye la fila semi-rapida.</p>
+                                <a href="#pricing" class="btn btn-yellow d-grid">Comprar en línea</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PRICE #4 -->
+                    <div class="col-11 col-lg-3 mb-4 mx-auto">
+                        <div class="card h-100 text-center shadow-lg">
+                            <h3 class="card-header py-3 card-title border-0 shadow-sm">Vip</h3>
+                            <div class="card-body">
+                                <p class="display-6">$20</p>
+                                <p class="card-text">Entrada de mayor costo. <br>
+                                    Acceso libre a sectores vip. <br>
+                                    Incluye la fila rapida.</p>
+                                <a href="#pricing" class="btn btn-black d-grid">Comprar en línea</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-4 mx-lg-4">
+                    <div class="col-10 col-lg-9 mx-auto text-center mt-4">
+                        <p><strong><em>* Una vez presionado "Comprar en línea", la compra continuará en el servicio
+                                    oficial de venta de
+                                    entradas B-Ticket.</em></strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PROMO -->
+        <section id="promo">
+            <div class="container-fluid">
+                <div class="row division-section py-3 text-center mb-5">
+                    <div class="col-11 mx-auto text-white">
+                        <i class="bi bi-info-square fs-4"></i>
+                        <h2 class="d-inline ms-2 fs-2">Promociones</h2>
+                    </div>
+                </div>
+                <div class="row mx-md-4 mx-lg-4 pb-3">
+                    <!-- PROMO 1 -->
+                    <div class="col-11 col-md-6 col-lg-4 mx-auto mb-4">
+                        <div class="card h-100">
+                            <div class="card-body card-promo">
+                                <h3 class="card-title pt-1">Entrada gratuita y entradas a precio reducido</h3>
+                                <p class="card-text py-2">Más información sobre categorías de visitantes con derecho a
+                                    entrada gratuita y entradas a precio reducido.</p>
+                                <a href="#promo" class="btn btn-black px-4">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROMO 2 -->
+                    <div class="col-11 col-md-6 col-lg-4 mx-auto mb-4">
+                        <div class="card h-100">
+                            <div class="card-body card-promo">
+                                <h3 class="card-title pt-1">Emergencia COVID-19 | Reglas
+                                    para visitantes</h3>
+                                <p class="card-text py-2">Información sobre normas y medidas anti-Covid19
+                                    a cumplir durante la visita a los museos.</p>
+                                <a href="#promo" class="btn btn-black px-4">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROMO 3 -->
+                    <div class="col-11 col-md-6 col-lg-4 mx-auto mb-4">
+                        <div class="card h-100">
+                            <div class="card-body card-promo">
+                                <h3 class="card-title pt-1">Reserva de boletos</h3>
+                                <p class="card-text py-2">Toda la información que necesitas para reservar
+                                    tus entradas para las Galerías Uffizi.</p>
+                                <a href="#promo" class="btn btn-black px-4">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROMO 4 -->
+                    <div class="col-11 col-md-6 col-lg-4 mx-auto mb-4">
+                        <div class="card h-100">
+                            <div class="card-body card-promo">
+                                <h3 class="card-title pt-1">Información de Accesibilidad
+                                    de las Galerías de los Uffizi</h3>
+                                <p class="card-text py-2">Toda la información sobre el acceso a los museos de
+                                    la Galería Uffizi.</p>
+                                <a href="#promo" class="btn btn-black px-4">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROMO 5 -->
+                    <div class="col-11 col-md-6 col-lg-4 mx-auto mb-4">
+                        <div class="card h-100">
+                            <div class="card-body card-promo">
+                                <h3 class="card-title pt-1">Entrada gratuita al Museo
+                                    Arqueológico Nacional</h3>
+                                <p class="card-text py-2">Cada entrada a los Uffizi también incluye la entrada
+                                    gratuita al Museo Arqueológico Nacional (válida
+                                    durante cinco días a partir de la fecha en que se
+                                    utiliza la entrada para acceder a los Uffizi).</p>
+                                <a href="#promo" class="btn btn-black px-4">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROMO 6 -->
+                    <div class="col-11 col-md-6 col-lg-4 mx-auto mb-4">
+                        <div class="card h-100">
+                            <div class="card-body card-promo">
+                                <h3 class="card-title pt-1">Entrada combinada Palacio Pitti +
+                                    Jardines de Boboli</h3>
+                                <p class="card-text py-2">Visite el Palacio Pitti y los Jardines de Boboli con
+                                    la misma entrada con descuento.</p>
+                                <a href="#promo" class="btn btn-black px-4">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer id="footer" class="py-3">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-lg-3 my-1 text-center">
+                    <a href="#">
+                        <img class="museum-logo" src="icons/logo_museo_white.svg" alt="logo_museo">
+                    </a>
+                </div>
+                <div class="col-11 col-lg-6 newsletter mx-auto my-4 py-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="h5"><strong>Suscribete a nuestro newsletter</strong></p>
+                            <p>Recibe noticias sobre nuestros próximos eventos</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="form-floating text-dark">
+                                <input type="email" class="form-control newsletter-email " id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Ingrese su email</label>
+                            </div>
+                        </div>
+                        <div class="col-4 text-center d-grid gap-1">
+                            <a href="#footer" class="btn btn-red pt-3">ENVIAR</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="col-10 d-sm-block d-lg-none mx-auto mt-2 pb-1"> <!-- DIVISION LINE -->
+                <div class="col-12 col-lg-3">
+                    <ul class="nav justify-content-center mb-1">
+                        <li class="nav-item active"><a class="nav-link px-2" target="_blank"
+                                href="https://www.twitter.com/"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="nav-item active"><a class="nav-link px-2" target="_blank"
+                                href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+                        <li class="nav-item active"><a class="nav-link px-2" target="_blank"
+                                href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="nav-item active"><a class="nav-link px-2" target="_blank"
+                                href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="col-12 d-none d-lg-block mx-auto mt-2 pb-2"> <!-- DIVISION LINE -->
+                <div class="col-12">
+                    <p class="text-center">&copy; 2022 Company, Inc. All rights reserved.</p>
+                    <p class="text-center text-muted">Julieta Bartlett, Britney Usik, Jerez Matias - DGM4A 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

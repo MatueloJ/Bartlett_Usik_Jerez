@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julieta Bartlett, Britney Usik, Jerez Matias - DGM4A 2022</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet" />
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/d62cc32a5a.js" crossorigin="anonymous"></script>
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/eoc5pwg.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid my-1">
+                <a class="navbar-brand" href="#">
+                    <img class="m-1 museum-logo" src="icons/logo_museo_white.svg" alt="logo_museo">
+                </a>
+                <div>
+                    <!-- TICKETS NAVBAR HAMBURGER-->
+                    <a href="comprar-entradas.html" class="btn btn-red me-2 d-inline d-lg-none">ENTRADAS</a>
+                    <!-- HAMBUERGUER MENU NAVBAR -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mt-3 mt-lg-1">
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link nav-link-3 dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">inicio</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-dark" href="#events">eventos</a></li>
+                                <li><a class="dropdown-item text-dark" href="#artwork">obras</a></li>
+                                <li><a class="dropdown-item text-dark" href="#testimonial">opiniones</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link-2" href="quienes-somos.html">museo</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link-4" href="colecciones.html">colecciones</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link-4" href="merchandising.html">tienda</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link-5" href="contacto.html">contacto</a>
+                        </li>
+                    </ul>
+                    <!-- TICKETS NAVBAR-->
+                    <div class="d-lg-block text-end m-1">
+                        <input class="form-control mt-1 rounded-0" type="search" placeholder="Buscar"
+                            aria-label="Search" />
+                        <a href="comprar-entradas.html" class="d-none d-lg-inline-block btn btn-red mt-2">ENTRADAS</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- CAROUSEL -->
+        <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- CAROUSEL ITEM #1 -->
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/carouselHome1.jpg" class="d-block" alt="carousel_image1">
+                    </div>
+                    <div class="carousel-caption text-start">
+                        <p class="carousel-title display-5">Los Uffizi abren de nuevo
+                            por la noche</p>
+                        <p class="lead">Todos los martes del 13 de octubre al 25 de noviembre hasta las 21:30hs.
+                        </p>
+                    </div>
+                </div>
+                <!-- CAROUSEL ITEM #2 -->
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/carouselHome2.jpg" class="d-block" alt="carousel_image2">
+                    </div>
+                    <div class="carousel-caption text-start">
+                        <p class="carousel-title display-5">¡Increibles obras de arte!</p>
+                        <p class="lead">Un territorio por explorar, un patrimonio artístico por redescubrir.</p>
+                    </div>
+                </div>
+                <!-- CAROUSEL ITEM #3 -->
+                <a href="#footer">
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="d-flex justify-content-center">
+                            <img src="images/carouselHome3.jpg" class="d-block" alt="carousel_image3">
+                        </div>
+                        <div class="carousel-caption text-start">
+                            <p class="carousel-title display-5">¡Síguenos!</p>
+                            <p class="lead">¡Suscríbete al newsletter de las Galerías Uffizi y síguenos en nuestras
+                                redes
+                                sociales!</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- HERO -->
+        <section id="hero">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-9 mx-auto text-center d-lg-flex justify-content-lg-center align-items-lg-center">
+                        <div class="col-12 col-lg-6 text-lg-start">
+                            <h1 class="display-5">La Galeria de los Uffizi</h1>
+                            <p class="lead">La Galería de los Uffizi es sin duda uno de los museos más visitados del
+                                mundo. Podríamos comparar la visita a los Uffizi con un maravilloso viaje a través de la
+                                historia de la pintura. <br>
+                                No pierda el tiempo en sus vacaciones haciendo la cola...
+                                ¡Compre las entradas en línea con nuestro sistema seguro y simple, y salte la línea!
+                            </p>
+                            <a href="comprar-entradas.html" class="btn btn-red fs-5 d-block d-lg-inline-block">ADQUIRIR
+                                ENTRADAS</a>
+                        </div>
+                        <div class="col-12 col-lg-6 mt-4 mt-lg-0 text-lg-end">
+                            <img src="images/hero_animado.gif" class="img-fluid" alt="hero">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="events">
+            <div class="container-fluid">
+                <div class="row division-section py-3 text-center mb-5">
+                    <div class="col-11 mx-auto text-white">
+                        <i class="bi bi-calendar-event fs-4"></i>
+                        <h2 class="d-inline ms-2 fs-2">Eventos</h2>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center mx-lg-3 events">
+                    <div class="col-12 col-md-5 col-lg-3 text-center mb-5 mb-lg-0 mx-md-3 mx-lg-3 shadow">
+                        <div class="card border-0">
+                            <div class="card-body py-4">
+                                <img src="images/evento_1.jpg" alt="evento-1" class="img-fluid">
+                                <h3 class="card-title mt-3">Pietro Aretino y el arte del Renacimiento</h3>
+                                <p class="card-text">Del 13/07/2022 hasta el 02/11/2022</p>
+                                <a href="#" class="btn btn-black px-5 px-md-0 d-md-grid" data-bs-toggle="modal"
+                                    data-bs-target="#modal1">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-3 text-center mb-5 mb-lg-0 mx-md-3 mx-lg-5 shadow">
+                        <div class="card border-0">
+                            <div class="card-body py-4">
+                                <img src="images/evento_2.jpg" alt="evento-2" class="img-fluid">
+                                <h3 class="card-title mt-3">Neo Rauch. Pinturas de 2008 a 2019</h3>
+                                <p class="card-text">Del 13/07/2022 hasta el 02/11/2022</p>
+                                <a href="#" class="btn btn-black px-5 px-md-0 d-md-grid" data-bs-toggle="modal"
+                                    data-bs-target="#modal2">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-3 text-center mb-5 mb-md-0 mx-md-2 mx-lg-3 shadow">
+                        <div class="card border-0">
+                            <div class="card-body py-4">
+                                <img src="images/evento_3.jpg" alt="evento-3" class="img-fluid">
+                                <h3 class="card-title mt-3">100 lobos del artista chino Liu Ruowang</h3>
+                                <p class="card-text">Del 13/07/2022 hasta el 02/11/2022</p>
+                                <a href="#" class="btn btn-black px-5 px-md-0 d-md-grid" data-bs-toggle="modal"
+                                    data-bs-target="#modal3">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MODALS -->
+                <!-- 1 -->
+                <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content rounded-0">
+                            <div class="modal-header text-white rounded-0">
+                                <h3 class="fs-4 my-0">Informacion</h3>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body border-bottom">
+                                <p class="card-text"><strong>Pietro Aretino y el arte del Renacimiento</strong></p>
+                                <p class="card-text">Jueves a Domingo | 08:15 - 18:50</p>
+                                <p class="card-text">Reducciones: grupos a partir de 15 personas.</p>
+                            </div>
+                            <div class="modal-body border-bottom">
+                                <p class="card-text"><strong>Archivos adjuntos</strong></p>
+                            </div>
+                            <div class="modal-body d-flex justify-content-between align-items-center">
+                                <p class="my-0">Visita guiada</p>
+                                <i class="bi bi-filetype-pdf my-0"></i>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="comprar-entradas.html" class="btn btn-black">Entradas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content rounded-0">
+                            <div class="modal-header text-white rounded-0">
+                                <h3 class="fs-4 my-0">Informacion</h3>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body border-bottom">
+                                <p class="card-text"><strong>Neo Rauch. Pinturas de 2008 a 2019</strong></p>
+                                <p class="card-text">Martes a Viernes | 08:15 - 18:50</p>
+                                <p class="card-text">Reducciones: grupos a partir de 20 personas.</p>
+                            </div>
+                            <div class="modal-body border-bottom">
+                                <p class="card-text"><strong>Archivos adjuntos</strong></p>
+                            </div>
+                            <div class="modal-body d-flex justify-content-between align-items-center">
+                                <p class="my-0">Visita guiada</p>
+                                <i class="bi bi-filetype-pdf my-0"></i>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="comprar-entradas.html" class="btn btn-black">Entradas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content rounded-0">
+                            <div class="modal-header text-white rounded-0">
+                                <h3 class="fs-4 my-0">Informacion</h3>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body border-bottom">
+                                <p class="card-text"><strong>100 lobos del artista chino Liu Ruowang</strong></p>
+                                <p class="card-text">Lunes a Jueves | 08:30 - 15:30</p>
+                                <p class="card-text">Reducciones: grupos a partir de 15 personas.</p>
+                            </div>
+                            <div class="modal-body border-bottom">
+                                <p class="card-text"><strong>Archivos adjuntos</strong></p>
+                            </div>
+                            <div class="modal-body d-flex justify-content-between align-items-center">
+                                <p class="my-0">Visita guiada</p>
+                                <i class="bi bi-filetype-pdf my-0"></i>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="comprar-entradas.html" class="btn btn-black">Entradas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ARTWORK -->
+        <section id="artwork">
+            <div class="container-fluid pb-1 text-center">
+                <div class="row division-section py-3 text-center mb-5">
+                    <div class="col-11 mx-auto text-white">
+                        <i class="bi bi-brush fs-4"></i>
+                        <h2 class="d-inline ms-2 fs-2">Obras</h2>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-9 mx-auto text-center mt-4">
+                    <p class="lead">Nuestra colección cuenta con mas de 200.000 obras de arte de distintos artistas.</p>
+                </div>
+                <div class="row mx-md-4 mx-lg-4 pt-3">
+                    <!-- ARTIST 1 -->
+                    <div class="col-11 col-md-6 col-lg-3 mb-4 mx-auto">
+                        <a href="colecciones.html#artworkSection1">
+                            <div class="card h-100 text-bg-dark border-0">
+                                <img src="images/artwork/artwork1_1.jpg" class="card-img" alt="artwork_1">
+                                <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                    <div>
+                                        <h3 class="card-title card-title1"><strong>Jacopo Vignali</strong></h3>
+                                        <p>Jacopo Vignali fue un pintor florentino de estilo barroco. Su discípulo más
+                                            importante fue Carlo Dolci.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- ARTIST 2 -->
+                    <div class="col-11 col-md-6 col-lg-3 mb-4 mx-auto">
+                        <a href="colecciones.html#artworkSection2">
+                            <div class="card h-100 text-bg-dark border-0">
+                                <img src="images/artwork/artwork1_2.jpg" class="card-img" alt="artwork_2">
+                                <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                    <div>
+                                        <h3 class="card-title card-title2"><strong>Sandro Botticelli</strong></h3>
+                                        <p>Fue un pintor del Quattrocento italiano. Pertenece, a su vez, a la tercera
+                                            generación cuatrocentista.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- ARTIST 3 -->
+                    <div class="col-11 col-md-6 col-lg-3 mb-4 mx-auto">
+                        <a href="colecciones.html#artworkSection3">
+                            <div class="card h-100 text-bg-dark border-0">
+                                <img src="images/artwork/artwork1_3.jpg" class="card-img" alt="artwork_3">
+                                <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                    <div>
+                                        <h3 class="card-title card-title3"><strong>Giovanni Masaccio</strong></h3>
+                                        <p> A pesar de la brevedad de su vida, su obra tuvo una importancia decisiva en
+                                            la historia de la pintura.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- ARTIST 4 -->
+                    <div class="col-11 col-md-6 col-lg-3 mb-4 mx-auto">
+                        <a href="colecciones.html#artworkSection4">
+                            <div class="card h-100 text-bg-dark border-0">
+                                <img src="images/artwork/artwork1_4.jpg" class="card-img" alt="artwork_4">
+                                <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                    <div>
+                                        <h3 class="card-title card-title4"><strong>Andrea d'Agnolo</strong></h3>
+                                        <p>Fue conocido como un destacado decorador al fresco, pintor de retablos,
+                                            retratista, dibujante y colorista.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-11 col-md-12 mx-auto mb-4 text-center text-md-end d-grid d-md-block">
+                        <a href="colecciones.html" class="btn btn-black">Ir a la colección</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonial">
+            <div class="container-fluid pb-1">
+                <div class="row division-section py-3 text-center mb-5">
+                    <div class="col-11 mx-auto text-white">
+                        <i class="bi bi-chat-right-dots fs-4"></i>
+                        <h2 class="d-inline ms-2 fs-2">Testimoniales</h2>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-11 mx-auto mb-5">
+                        <h3 class="display-6"><small>Por que tu opinión nos interesa</small></h3>
+                    </div>
+                    <div class="col-12 col-md-11 mx-auto shadow-lg py-5">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/testimonial1.jpg" alt="testimonial_1"
+                                        class="img-fluid rounded-circle">
+                                    <h3 class="my-3">Diana Gomez</h3>
+                                    <div class="col-9 mx-auto">
+                                        <p class="">Galería de obligada
+                                            visita si se viaja a Florencia!
+                                            Gran cantidad de obras de arte de renombre.
+                                            Recomiendo la compra de entradas online para evitar algo de cola.</p>
+                                    </div>
+                                    <ul class="nav justify-content-center mb-1">
+                                        <li class="nav-item active px-1"><i
+                                                class="bi bi-star-fill testimonial-rate fs-4"></i></li>
+                                        <li class="nav-item active px-1"><i
+                                                class="bi bi-star-fill testimonial-rate fs-4"></i></li>
+                                        <li class="nav-item active px-1"><i
+                                                class="bi bi-star-fill testimonial-rate fs-4"></i></li>
+                                        <li class="nav-item active px-1"><i
+                                                class="bi bi-star-fill testimonial-rate fs-4"></i></li>
+                                        <li class="nav-item active px-1"><i
+                                                class="bi bi-star-half testimonial-rate fs-4"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/testimonial2.jpg" alt="testimonial_2"
+                                        class="img-fluid rounded-circle">
+                                    <h3 class="my-3">Virginia Garcia</h3>
+                                    <div class="col-9 mx-auto">
+                                        <p class="">Uno de los mejores museos del mundo sin duda alguna. Tanto el
+                                            edificio como las obras son espectaculares. Es totalmente de visita obligada
+                                            si vas a Florencia.</p>
+                                    </div>
+                                    <ul class="nav justify-content-center mb-1">
+                                        <li class="nav-item active px-1"><i
+                                                class="bi bi-star-fill testimonial-rate fs-4"></i></li>
+                                        <li class="nav-item active px-1"><i
+                                                class="bi bi-star-fill testimonial-rate fs-4"></i></li>
+                                        <li class="nav-item active px-1"><i
+                                                class="bi bi-star-fill testimonial-rate fs-4"></i></li>
+                                        <li class="nav-item active px-1"><i
+                                                class="bi bi-star-fill testimonial-rate fs-4"></i></li>
+                                        <li class="nav-item active px-1"><i
+                                                class="bi bi-star-fill testimonial-rate fs-4"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/testimonial3.jpg" alt="testimonial_3"
+                                        class="img-fluid rounded-circle">
+                                    <h3 class="my-3">Cristian Aguirre</h3>
+                                    <div class="col-9 mx-auto">
+                                        <p class="">Maravillosa. Me encantó esta visita y eso que estuve hace más de 15
+                                            años. Da gusto pasear tranquilamente por sus galerías e ir encontrándose con
+                                            tantas obras impresionantes.</p>
+                                    </div>
+                                    <ul class="nav justify-content-center mb-1">
+                                        <li class="nav-item active px-1"><i
+                                                class="bi bi-star-fill testimonial-rate fs-4"></i></li>
+                                        <li class="nav-item active px-1"><i
+                                                class="bi bi-star-fill testimonial-rate fs-4"></i></li>
+                                        <li class="nav-item active px-1"><i
+                                                class="bi bi-star-fill testimonial-rate fs-4"></i></li>
+                                        <li class="nav-item active px-1"><i
+                                                class="bi bi-star-fill testimonial-rate fs-4"></i></li>
+                                        <li class="nav-item active px-1"><i
+                                                class="bi bi-star-half testimonial-rate fs-4"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer id="footer" class="py-3">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-lg-3 my-1 text-center">
+                    <a href="#">
+                        <img class="museum-logo" src="icons/logo_museo_white.svg" alt="logo_museo">
+                    </a>
+                </div>
+                <div class="col-11 col-lg-6 newsletter mx-auto my-4 py-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="h5"><strong>Suscribete a nuestro newsletter</strong></p>
+                            <p>Recibe noticias sobre nuestros próximos eventos</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="form-floating text-dark">
+                                <input type="email" class="form-control newsletter-email " id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Ingrese su email</label>
+                            </div>
+                        </div>
+                        <div class="col-4 text-center d-grid gap-1">
+                            <a href="#footer" class="btn btn-red pt-3">ENVIAR</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="col-10 d-sm-block d-lg-none mx-auto mt-2 pb-1"> <!-- DIVISION LINE -->
+                <div class="col-12 col-lg-3">
+                    <ul class="nav justify-content-center mb-1">
+                        <li class="nav-item active"><a class="nav-link px-2" target="_blank"
+                                href="https://www.twitter.com/"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="nav-item active"><a class="nav-link px-2" target="_blank"
+                                href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+                        <li class="nav-item active"><a class="nav-link px-2" target="_blank"
+                                href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="nav-item active"><a class="nav-link px-2" target="_blank"
+                                href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="col-12 d-none d-lg-block mx-auto mt-2 pb-2"> <!-- DIVISION LINE -->
+                <div class="col-12">
+                    <p class="text-center">&copy; 2022 Company, Inc. All rights reserved.</p>
+                    <p class="text-center text-muted">Julieta Bartlett, Britney Usik, Jerez Matias - DGM4A 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
